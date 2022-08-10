@@ -20,7 +20,7 @@ class Left extends Component {
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam laboriosam assumenda obcaecati odio
             </p>
 
-         </div>
+         </difgfv>
       );
 
 
