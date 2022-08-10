@@ -4,15 +4,17 @@ import {
    CardTitle
 } from 'reactstrap';
 
+import bluepop from '../images/blue-pop.png';
+
 
 class Left extends Component {
 
 
    render() {
       return (
-         <div id="Race">
+         <div id="Race" className='container'>
 
-            <img src="images\blue-pop.png" alt="blue pop" />
+            <img src={bluepop} alt="blue pop" />
 
             <h2>Popsicle Race</h2>
 
@@ -20,7 +22,7 @@ class Left extends Component {
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam laboriosam assumenda obcaecati odio
             </p>
 
-         </difgfv>
+         </div>
       );
 
 

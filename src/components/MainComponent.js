@@ -12,12 +12,9 @@ render(){
    return(
       <div id="main" className="container">
          <Top/>
-
-
-      <div id="row-line"></div>
-
-          <Left/>
-         {/*<Right/> */}
+         <div id="row-line"></div>
+         <Left/>
+         <Right/>
 
       </div>
 

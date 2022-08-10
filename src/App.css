@@ -97,7 +97,7 @@ header h1 {
    "Race Refreshed";
    grid-template-columns: 1fr 1fr;
 
-  align-items: center;
+
 
   margin: 10px;
   border-color: #87CEEB;
@@ -106,6 +106,7 @@ header h1 {
 
 #DYK{
 
+  background-color: white;
   grid-area: DYK;
 
   grid-area: DYK DYK;
@@ -143,7 +144,8 @@ h2{
   grid-area: list;
 
   /* display:flex; */
-  align-items: start;
+  justify-self: left;
+  list-style: none;
 
 }
 p{
@@ -154,13 +156,18 @@ p{
 
 #row-line{
   grid-area: row-line;
-  border: 2.5px solid #ffffff;
-  background-color: #ffffff;
+  border: 2.5px solid #87CEEB;
+  background-color: #87CEEB;
 
 
 }
+#Race h2{
+  justify-self: auto;
+  align-self: auto;
+}
 
 #Race{
+  background-color: white;
   display: grid;
   grid-template-areas:
   "blue-pop heading"
@@ -168,6 +175,7 @@ p{
   grid-area: Race;
   border-right: solid 5px #87CEEB;
 }
+
 #Race img {
   grid-area: blue-pop;
 
@@ -180,21 +188,29 @@ p{
 }
 
 #Refreshed{
+  grid-area: Refreshed;
+
   display:flex;
+
   flex-direction: column;
   grid-template-areas:
   "heading"
   "text"
   "button";
-  grid-area: Refreshed;
+
   align-items: center;
-  justify-items: center;
+  justify-content: center;
+
 
   text-align: center;
 
+  background-color: white;
+
 }
 
-main li:before {
+
+#main li:before {
+
   content: '🍡';
   margin-left: -31px;
   padding-right: 8px;
@@ -224,4 +240,117 @@ footer{
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media only screen and (max-width:800px) {
+
+  .App{
+      display: flex;
+      flex-direction: column;
+  }
+
+  header{
+      display: grid;
+      order:0;
+      grid-template-areas:
+      "logo heading"
+      "nav nav";
+  }
+  header img{
+      grid-area:logo;
+  }
+  h1{
+      grid-area:heading;
+  }
+  nav{
+      grid-area: nav;
+      order:1;
+      /* padding:0px; */
+
+
+  }
+  nav ul{
+  }
+  nav ul li {
+      /* list-style: none; */
+      width: 30%;
+      padding: 5px;
+  }
+
+
+  #main{
+      display:flex;
+      flex-direction: column;
+  }
+
+  #DYK{
+
+      order:0;
+      display:flex;
+      flex-direction: column;
+      width: auto;
+      border-bottom:5px solid #87CEEB;
+
+  }
+  #DYK img{
+      max-width: 100%;
+
+      height:auto;
+  }
+
+  #Race{
+      order:1;
+      display:grid;
+      grid-template-areas:
+      "blue-pop heading"
+      "text text";
+      border:none;
+      border-bottom:5px solid #87CEEB;
+      padding: 5%;
+
+
+  }
+  #row-line{
+      display:none;
+  }
+  #Race img{
+      max-width: 50%;
+      height:auto;
+      justify-self: center;
+
+  }
+  #Race p{
+      justify-self: center;
+      width: 100%;
+      padding: 2%;
+
+  }
+
+  #Refreshed{
+
+
+      order:2;
+      padding: 5%;
+
+  }
+  #Refreshed p{
+      justify-self: center;
+      width: 100%;
+      padding: 2%;
+
+  }
+
+  .store-button{
+      margin-bottom: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
 }
