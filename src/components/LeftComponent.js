@@ -18,8 +18,8 @@ class Left extends Component {
 
             <h2>Popsicle Race</h2>
 
-            <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam laboriosam assumenda obcaecati odio
+            <p>Don't forget to sign up for the race! Each attendee will receive their own box
+                        of popsicles when they reach the end.
             </p>
 
          </div>

@@ -12,7 +12,8 @@ class Right extends Component {
       return (
          <div id="Refreshed" className="container">
             <h2>Get Refreshed This Summer!</h2>
-            <p>dsafdsfdsfdsf</p>
+            <p>Mark this very special occasion of the launch of Tech Elevator Popsicles by buying a gift from our
+                    stunning array of items, shipped directly from Cleveland.</p>
             <a href="#" class="store-button">STORE</a>
          </div >
 

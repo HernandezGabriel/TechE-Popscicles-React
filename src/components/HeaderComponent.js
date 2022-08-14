@@ -4,6 +4,9 @@ import {
    CardTitle
 } from 'reactstrap';
 
+import Contact from './ContactComponent';
+
+
 import TEpops from '../images/te-pops.png';
 
 
@@ -20,9 +23,9 @@ class Header extends Component {
 
                <nav>
                   <ul>
-                     <li><a href="#">HOME</a></li>
+                     <li><a href="/homepage">HOME</a></li>
                      <li><a href="#">STORE</a></li>
-                     <li><a href="#">CONTACT US</a></li>
+                     <li><a href="/contact">CONTACT US</a></li>
                   </ul>
                </nav>
 

@@ -5,8 +5,7 @@ import Left from './LeftComponent';
 import Top from './TopComponent';
 import Right from './RightComponent';
 class Main extends Component {
-   // <Left/>
-   // <Right/>
+
 
 render(){
    return(
