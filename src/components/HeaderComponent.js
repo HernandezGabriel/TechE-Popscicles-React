@@ -5,6 +5,9 @@ import {
 } from 'reactstrap';
 
 import Contact from './ContactComponent';
+import {Link} from 'react-router-dom'
+
+
 
 
 import TEpops from '../images/te-pops.png';
@@ -23,9 +26,9 @@ class Header extends Component {
 
                <nav>
                   <ul>
-                     <li><a href="/homepage">HOME</a></li>
-                     <li><a href="#">STORE</a></li>
-                     <li><a href="/contact">CONTACT US</a></li>
+                     <li><Link to="/homepage">HOME</Link></li>
+                     <li><Link to="#">STORE</Link></li>
+                     <li><Link to="/contact">CONTACT US</Link></li>
                   </ul>
                </nav>
 

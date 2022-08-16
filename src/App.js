@@ -6,13 +6,10 @@ import Main from './components/MainComponent'
 import Footer from './components/FooterComponent';
 import Contact from './components/ContactComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import { Component } from 'react';
-
 import {
   BrowserRouter as Router,
-  Link
 } from "react-router-dom";
-import { render } from '@testing-library/react';
+
 
 
 export default function App() {
